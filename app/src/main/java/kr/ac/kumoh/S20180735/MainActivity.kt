@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
 
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             holder.txTitle.text = model.list?.value?.get(position)?.title ?: null
-            holder.txSinger.text = model.list?.value?.get(position)?.title ?: null
+            holder.txSinger.text = model.list?.value?.get(position)?.singer ?: null
         }
     }
 }
